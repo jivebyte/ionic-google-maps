@@ -4,7 +4,7 @@ import { SplashScreen} from "@ionic-native/splash-screen";
 import { StatusBar} from "@ionic-native/status-bar";
 
 import { TabsNavigationPage } from '../pages/tabs-navigation/tabs-navigation';
-
+import { google } from "google-maps";
 
 @Component({
   template: `<ion-nav [root]="rootPage"></ion-nav>`
@@ -12,7 +12,7 @@ import { TabsNavigationPage } from '../pages/tabs-navigation/tabs-navigation';
 export class MyApp {
   @ViewChild(Nav) nav: Nav;
   rootPage: any;
-
+  google: google;
   constructor(
     platform: Platform,
     public statusBar: StatusBar,

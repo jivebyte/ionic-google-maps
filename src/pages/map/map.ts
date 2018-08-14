@@ -39,7 +39,7 @@ export class MapPage {
       //Set latitude and longitude of some place
     this.map = new google.maps.Map(document.getElementById('map'), {
       center: {lat: -34.9011, lng: -56.1645},
-      zoom: 15
+      // center: {lat: -18.149077, lng: 178.44444899999996},
     });
   }
 
